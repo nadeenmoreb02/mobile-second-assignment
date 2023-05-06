@@ -1,24 +1,19 @@
 package com.example.myapplication;
 
 public class Vocabulary {
-    private String word;
+    private String name;
     private String definition;
-    private String example;
-    public Vocabulary(String word, String definition, String example) {
-        this.word = word;
+
+    public Vocabulary(String name, String definition) {
+        this.name = name;
         this.definition = definition;
-        this.example = example;
     }
 
-    public String getWord() {
-        return word;
+    public String getName() {
+        return name;
     }
 
     public String getDefinition() {
         return definition;
-    }
-
-    public String getExample() {
-        return example;
     }
 }
