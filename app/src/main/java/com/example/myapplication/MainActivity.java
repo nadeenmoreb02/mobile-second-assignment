@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         ImageView imageView = findViewById(R.id.imageView);
 
 
+
+
         TextView titleTextView = findViewById(R.id.titleTextView);
         TextView descriptionTextView = findViewById(R.id.descriptionTextView);
         Button startButton = findViewById(R.id.startButton);
