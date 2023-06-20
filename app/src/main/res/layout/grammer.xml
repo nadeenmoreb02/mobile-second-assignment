@@ -21,18 +21,16 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="340dp"
-        android:layout_height="340dp"
+        android:layout_width="285dp"
+        android:layout_height="358dp"
         android:layout_margin="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textColorHighlight="@color/purple_200"
-        android:textSize="50sp"
+        android:textSize="20sp"
         tools:ignore="MissingConstraints,NotSibling"
         tools:layout_editor_absoluteX="69dp"
         tools:layout_editor_absoluteY="353dp" />
-
-
 
 
 
