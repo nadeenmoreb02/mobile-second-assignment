@@ -4,7 +4,9 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Button vocabBtn = (Button)findViewById(R.id.button2);
         Button vowelBtn = (Button)findViewById(R.id.buttonVowel);
         Button grammerBtn = (Button)findViewById(R.id.button3);
+        Button alphabetBtn = (Button)findViewById(R.id.alphabetBtn);
 
 
 
@@ -217,7 +220,18 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-
-
+       alphabetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(MainActivity.this, AlphabetActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 1000);
+            }});
     }
 }

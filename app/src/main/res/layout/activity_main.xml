@@ -33,15 +33,37 @@
         app:srcCompat="@drawable/download"
         tools:layout_editor_absoluteX="93dp"
         tools:layout_editor_absoluteY="96dp" />
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:text="Vocabularies"
-        android:layout_margin="15dp"
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/alphabetBtn"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
 
-        tools:layout_editor_absoluteX="215dp"
-        tools:layout_editor_absoluteY="509dp" />
+            android:text="Alphbet"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="629dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_margin="15dp"
+            android:text="Vocabularies"
+
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="509dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        >
     <Button
         android:id="@+id/buttonVowel"
         android:layout_width="200dp"
@@ -60,4 +82,6 @@
         android:text="Grammer"
         tools:layout_editor_absoluteX="122dp"
         tools:layout_editor_absoluteY="629dp" />
+    </LinearLayout>
+
 </LinearLayout>

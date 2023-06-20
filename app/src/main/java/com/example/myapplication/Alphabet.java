@@ -8,7 +8,7 @@ public class Alphabet {
         this.alphabet = alphabet;
         this.imgId = imgId;
     }
-   /* Alphabet[] alphabets = {
+    static Alphabet[] alphabets = {
 
             new Alphabet("A", R.drawable.image_a),
             new Alphabet("B", R.drawable.image_b),
@@ -37,7 +37,6 @@ public class Alphabet {
             new Alphabet("Y", R.drawable.image_y),
             new Alphabet("Z", R.drawable.image_z)
     };
-*/
 
 
     public String getAlphabet() {
