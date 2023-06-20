@@ -21,8 +21,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="411dp"
-        android:layout_height="261dp"
+        android:layout_width="359dp"
+        android:layout_height="220dp"
         android:layout_margin="10dp"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -39,6 +39,15 @@
 
 
         />
+
+    <Button
+        android:id="@+id/backgrammerBtn"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:text="Main"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="510dp" />
 
 
 </LinearLayout>

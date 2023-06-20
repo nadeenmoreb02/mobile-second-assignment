@@ -4,7 +4,9 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -31,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         Button vowelBtn = (Button)findViewById(R.id.buttonVowel);
         Button grammerBtn = (Button)findViewById(R.id.button3);
         Button alphabetBtn = (Button)findViewById(R.id.alphabetBtn);
+        Button numbersBtn = (Button) findViewById(R.id.numbersBtn);
+        Button backvowelBtn = (Button) findViewById(R.id.backVowelBtn);
+        Button backvocabBtn = (Button) findViewById(R.id.backVocabBtn);
+        Button backgrammerBtn = (Button) findViewById(R.id.backgrammerBtn);
 
 
 
@@ -114,6 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
                 // Set the adapter for the spinner
                 vocabularySpinner.setAdapter(adapter);
 
@@ -139,6 +147,12 @@ public class MainActivity extends AppCompatActivity {
                         // TODO: handle the case when nothing is selected
                     }
                 });
+           /*     backvocabBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        setContentView(R.layout.activity_main);}});*/
+
 
             }
         });
@@ -183,6 +197,11 @@ public class MainActivity extends AppCompatActivity {
                         // TODO: handle the case when nothing is selected
                     }
                 });
+                  /* backvowelBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+
+                            setContentView(R.layout.activity_main);}});*/
 
             }
         });
@@ -217,7 +236,13 @@ public class MainActivity extends AppCompatActivity {
                         // This method is called when nothing is selected in the spinner
                         // TODO: handle the case when nothing is selected
                     }
+
                 });
+             /*   backgrammerBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        setContentView(R.layout.activity_main);}});*/
             }
         });
        alphabetBtn.setOnClickListener(new View.OnClickListener() {
@@ -233,5 +258,20 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }, 1000);
             }});
+        numbersBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent = new Intent(MainActivity.this, NumbersActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }, 500);
+            }});
+
     }
+
 }

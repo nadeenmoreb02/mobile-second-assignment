@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="340dp"
+        android:layout_width="384dp"
         android:layout_height="170dp"
         android:layout_margin="10dp"
         android:textAlignment="center"
@@ -34,11 +34,18 @@
 
     <ImageView
         android:id="@+id/vImg"
-        android:layout_width="330dp"
-        android:layout_height="291dp"
-
+        android:layout_width="280dp"
+        android:layout_height="237dp"
 
         />
+    <Button
+        android:id="@+id/backVowelBtn"
+        android:layout_width="166dp"
+        android:layout_height="80dp"
+        android:text="Main"
+        android:layout_margin="15dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="510dp" />
 
 
 </LinearLayout>

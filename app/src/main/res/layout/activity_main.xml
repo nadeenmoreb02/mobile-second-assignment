@@ -38,27 +38,37 @@
         android:layout_width="wrap_content"
         android:orientation="horizontal"
         >
+
         <Button
             android:id="@+id/alphabetBtn"
-            android:layout_width="200dp"
+            android:layout_width="166dp"
             android:layout_height="80dp"
             android:layout_margin="15dp"
 
             android:text="Alphbet"
             tools:layout_editor_absoluteX="122dp"
             tools:layout_editor_absoluteY="629dp" />
-
         <Button
-            android:id="@+id/button2"
-            android:layout_width="200dp"
+            android:id="@+id/numbersBtn"
+            android:layout_width="166dp"
             android:layout_height="80dp"
             android:layout_margin="15dp"
-            android:text="Vocabularies"
 
-            tools:layout_editor_absoluteX="215dp"
-            tools:layout_editor_absoluteY="509dp" />
+            android:text="Numbers"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="629dp" />
+
+
     </LinearLayout>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_margin="15dp"
+        android:text="Vocabularies"
 
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="509dp" />
     <LinearLayout
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -66,7 +76,7 @@
         >
     <Button
         android:id="@+id/buttonVowel"
-        android:layout_width="200dp"
+        android:layout_width="166dp"
         android:layout_height="80dp"
         android:text="Vowels"
         android:layout_margin="15dp"
@@ -75,7 +85,7 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="200dp"
+        android:layout_width="166dp"
         android:layout_height="80dp"
         android:layout_margin="15dp"
 
