@@ -9,8 +9,8 @@
     android:background="@color/purple_200">
 
     <ImageView
-        android:layout_width="181dp"
-        android:layout_height="159dp"
+        android:layout_width="95dp"
+        android:layout_height="101dp"
         android:src="@drawable/user"
 
         />
